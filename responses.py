@@ -10,5 +10,5 @@ def get_response(user_input: str) -> str:
     else:
         return choice(['I didn\'t quite catch that...',
                        'my beeps can\'t proccess those boops',
-                       'I\'ll never see it coming (if you keep phrasing questions like that)',
+                       'row row fight the power',
                        'please stop saying dumb things, you\'re not even making sense T_T'])
