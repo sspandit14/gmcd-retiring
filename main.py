@@ -66,6 +66,12 @@ async def on_raw_reaction_add(payload):
             role = discord.utils.get(guild.roles, name='Events')
         elif payload.emoji.name == '🟠':
             role = discord.utils.get(guild.roles, name='Competing')
+        elif payload.emoji.name == '🇭':
+            role = discord.utils.get(guild.roles, name='He/Him')
+        elif payload.emoji.name == '🇸':
+            role = discord.utils.get(guild.roles, name='She/Her')
+        elif payload.emoji.name == '🇹':
+            role = discord.utils.get(guild.roles, name='They/Them')
         else:
             role = None
             print(payload.emoji.name)
@@ -93,6 +99,12 @@ async def on_raw_reaction_remove(payload):
             role = discord.utils.get(guild.roles, name='Events')
         elif payload.emoji.name == '🟠':
             role = discord.utils.get(guild.roles, name='Competing')
+        elif payload.emoji.name == '🇭':
+            role = discord.utils.get(guild.roles, name='He/Him')
+        elif payload.emoji.name == '🇸':
+            role = discord.utils.get(guild.roles, name='She/Her')
+        elif payload.emoji.name == '🇹':
+            role = discord.utils.get(guild.roles, name='They/Them')
         else:
             role = None
             print(payload.emoji.name)
